@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api_mock:
+    container_name: api_mock
+    build: .
+    tty: true
+    ports:
+      - 9000:9000
+    volumes:
+      - ./app:/app
